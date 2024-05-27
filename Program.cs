@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace perceptron
 {
@@ -10,6 +7,8 @@ namespace perceptron
     {
         static void Main()
         {
+            //most basic version of the perceptron
+
             //setup
             Random RNG = new Random();
             double[] inputs0 = new double[] { 1, 1, 1, 1 };
@@ -24,7 +23,7 @@ namespace perceptron
             //learning stage
             double learnRate = 1;
             double[] calcOutputs = new double[4];
-            for (int n = 0; n < 100; n++)
+            for (int n = 0; n < 10000; n++)
             {
                 for (int i = 0; i < inputs1.Length; i++)
                 {
